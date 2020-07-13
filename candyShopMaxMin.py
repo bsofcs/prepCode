@@ -24,6 +24,7 @@ if __name__=='__main__':
 		n,k=nk[0],nk[1]
 		candy=sorted(list(map(int,input().rstrip().split())))
 		print(candy)
+		# we take k+1 because for every 1 we get k free so we take K+1 candy everytime and even if there are less than k left we take it all
 		val=math.ceil(n/(k+1))
 		mini,maxi=sum(candy[:val]),sum(candy[:-val-1:-1])
 		print(mini," ",maxi)
