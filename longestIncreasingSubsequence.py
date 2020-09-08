@@ -12,7 +12,7 @@ Complexity: Exponential
 Approach 2: Using DP
 We create the array of length equal to input and calucalting the longest increasing subsequence of the array till that element.
 We must initialize the new array because at a single length sub-array each element is the longest subsequence in itself.
-Code: longestIncreasingSubsequenceDP
+Code: longestIncreasingSubsequence
 Complexity: O(n**2)
 
 Approach 3: Using Patience Sorting Technique
