@@ -55,6 +55,7 @@ def longestIncreasingSubsequenceBT(arr):
 	BTUtil(arr,n)
 	print(maximum)
 
+
 def ceilIndex(arr,T,l,val):
 	if arr is None or T is None or l is None or val is None:
 		return None
