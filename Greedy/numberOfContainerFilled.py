@@ -28,7 +28,7 @@ def numberOfContainerFilled(n,x):
 		return None
 	if n==0 or x==0:
 		return 0
-	cont=[[0 for _ in range(n+1)] for _ in range(n+1)]
+	cont=[[0 for _ in range(2*n)] for _ in range(2*n)]
 	cont[1][1]=x
 	count=0
 	for i in range(1,n+1):
@@ -37,8 +37,10 @@ def numberOfContainerFilled(n,x):
 				count+=1
 			cont[i+1][j]+=(cont[i][j]-1)/2
 			cont[i+1][j+1]+=(cont[i][j]-1)/2
-			print(cont)
+	for i in range(2*n):
+		print(cont[i],count)
+	print(count)
 
-n=3
-x=5
+n=4
+x=10
 numberOfContainerFilled(n,x)
