@@ -1,0 +1,9 @@
+What’s your biggest achievement in last 6 months?
+
+Design a Whatsapp like service.
+Given the high level design first, then dived deeper explaining load balancing, splitting into microservies and communication between them, notification service, message queuing, database sharding, etc.
+Asked me how to maintain the sequencing of messages, since client’s time-stamp would be unreliable.
+
+Class diagram for a standalone Chess board game.
+Discussion on the my design like, why this class/relationship is needed, why this method is in this class rather than that, etc. Convinced him for few of them, giving proper reasons, and made changes in the design for other few.
+Pseudo code for all the possible moves of any piece.
