@@ -29,11 +29,34 @@ def partArrInKSubset(arr,currIndex,k,TotSum,taken,sumTillNow):
 		taken[i]=False
 	return False
 
+def partitionArrayIntoKSubsetDP(arr,K):
+	if None in (arr,K):
+		return
+	N=len(arr)
+	Sum=sum(arr)
+	if Sum%K!=0 or N<K:
+		return False
+	target=Sum/K
+	dp=[0 for i in range(1<<15)]
+	for i in range((1<<15)):
+		dp[i]=-1
+	dp[0]=0
+	for mask in range((1<<15)):
+		if dp[mask]==-1:
+			continue
+		for i in range(N):
+			if (mask & (1<<i)==0) and dp[mask]+arr[i]<=target:
+				dp[mask|(1<<i)]=((dp[mask]+arr[i])%target)
+	if (dp[(1<<N)-1]==0):
+		return True
+	else:
+		return False
+	
+
 arr=[1,2,3,4,3,5]
-k=5
+k=2
 print(partitionArraryIntoKSubset(arr,k))
-dp = [i for i in range(1 << 4)] 
-print(dp)
+print(partitionArrayIntoKSubsetDP(arr,k))
 """
 https://www.geeksforgeeks.org/partition-of-a-set-into-k-subsets-with-equal-sum-using-bitmask-and-dp/?ref=rp
 """
