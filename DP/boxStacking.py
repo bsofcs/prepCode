@@ -56,6 +56,8 @@ def stackBoxes(length,width,height):
 	for i in range(n):
 		boxAllType.extend(allBoxesWithDimensions(boxes[i]))
 	boxAllType=sorted(boxAllType,key=lambda x:x.area)[::-1]
+	#for i in boxAllType:
+	#	i.printbox()
 	m=len(boxAllType)
 	maxTillNow=[i.height for i in boxAllType]
 	result=[i for i in range(m)]
