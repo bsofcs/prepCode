@@ -1,6 +1,7 @@
 """
 fittingSelvesProblem
-Given the length of the wall w and shelves of length m and n, find the number of each type of shelf be used and the remaining empty space in the optimal solution so that the empty space is minimum. The larger of the two shelves is cheaper so it is pererred. However the cost is secondary and first is to minimize the space left.
+Given the length of the wall w and shelves of length m and n, find the number of each type of shelf be used and the remaining empty space in the optimal solution so that the empty space is minimum. 
+The larger of the two shelves is cheaper so it is pererred. However the cost is secondary and first is to minimize the space left.
 Input : w = 24 m = 3 n = 5
 Output : 3 3 0
 We use three units of both shelves
