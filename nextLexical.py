@@ -26,3 +26,5 @@ arr="COCHIN"
 print(nextLexical(arr))
 arr="ALPHA"
 print(nextLexical(arr))
+arr="BHANU"
+print(nextLexical(arr))
