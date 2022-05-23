@@ -1,3 +1,5 @@
+#https://www.hackerrank.com/challenges/non-divisible-subset/problem
+
 def nonDivisibleSubset(k, s):
  n=len(s)
  if n not in range(1,10**5+1) or k not in range(1,101) or any(map(lambda s: s not in range(1,10**9+1),s)):
@@ -6,6 +8,7 @@ def nonDivisibleSubset(k, s):
  for x in s:
   mod_arr[x%k]+=1
  count=min(mod_arr[0],1)
+ print(mod_arr)
  for i in range(1,k//2+1):
   if i != k-i:
    count+=max(mod_arr[i],mod_arr[k-i])
