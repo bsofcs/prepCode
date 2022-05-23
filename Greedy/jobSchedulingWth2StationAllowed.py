@@ -1,6 +1,7 @@
 """
 jobSchedulingWth2StationAllowed
-We are given N jobs, and their starting and ending times. We can do two jobs simultaneously at a particular moment. If one job ends at the same moment some other show starts then we cant do them. We need to check if all jobs are possible to be done or not.
+We are given N jobs, and their starting and ending times. 
+We can do two jobs simultaneously at a particular moment. If one job ends at the same moment some other show starts then we cant do them. We need to check if all jobs are possible to be done or not.
 """
 
 def jobSchedulingWth2StationAllowed(start,end):
@@ -9,6 +10,7 @@ def jobSchedulingWth2StationAllowed(start,end):
 	n=len(start)
 	arr=[[start[i],end[i]] for i in range(n)]
 	arr=sorted(arr,key=lambda x:x[1])
+	print(arr)
 	j1=arr[0][1]
 	j2=arr[1][1]
 	for i in range(2,n):
