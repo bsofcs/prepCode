@@ -35,6 +35,8 @@ def subsetWithSumValDP(arr,K):
 		m[i][0]=1
 	for i in range(1,n+1):
 		for j in range(1,K+1):
+			if j<arr[i-1]:
+                		m[i][j]=m[i-1][j]
 			if arr[i-1]<=j:
 				m[i][j]=(m[i-1][j] or m[i-1][j-arr[i-1]])
 	for i in range(n+1):
@@ -42,6 +44,6 @@ def subsetWithSumValDP(arr,K):
 	print(m[n][K])
 
 arr=[10, 7, 5, 18, 12, 20, 15]
-K=35
+K=15
 subsetWithSumVal(arr,K)
 subsetWithSumValDP(arr,K)
