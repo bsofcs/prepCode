@@ -3,7 +3,7 @@ minimumDistancePairOfPoints
 The algorithm can be explained in 3 sub-problems:
 i.	Sort the points based on x-axis and find the median
 ii.	Get the minimum distant pair of points in left and right as dl and dr respectively. Take d as minimum among dl and dr
-iii.	Take the strip of length of d on both side of the median. length of strip=2*d. In the strip find the minimum distant paor of points ds.
+iii.	Take the strip of length of d on both side of the median. length of strip=2*d. In the strip find the minimum distant pair of points ds.
 Return the minimum of d and ds 
 """
 import math
