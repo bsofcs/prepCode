@@ -11,6 +11,7 @@ def zigZagTraversal(arr):
 				dp[i][0]=dp[j][1]+1
 			if arr[i]>arr[j] and dp[i][1]<dp[j][0]+1:
 				dp[i][1]=dp[j][0]+1
+			print(arr[i],arr[j],i,j,dp[i])
 			mx=max(mx,max(dp[i]))
 	print("\n",arr)
 	for i in dp:
