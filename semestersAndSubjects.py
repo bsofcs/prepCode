@@ -61,5 +61,5 @@ class Graph:
 
 lst_a=['C','DS','OS','CO','Algo','Design','Programming']
 lst_b=[['C','CO'],['OS','CO'],['DS','Algo'],['Design','Programming']]
-print(lst_a)
-makeListSems(lst_a,lst_b)
+print(lst_a,lst_b)
+
