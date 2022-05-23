@@ -41,8 +41,8 @@ def longestAlternatingSequence(arr):
 				las[i][1]=las[j][0]+1
 			#print(i,j,arr[i],arr[j],las[i])
 		res=max(res,max(las[i]))
-#	for i in range(n):
-#		print(las[i])
+	for i in range(n):
+		print(las[i])
 	print(res)
 arr=[1,5,4]
 print(arr)
