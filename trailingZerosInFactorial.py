@@ -11,4 +11,4 @@ def trailingZerosInFactorial(n):
   count+=n//i
   i*=5
  return count
-print(trailingZerosInFactorial(100))
+print(trailingZerosInFactorial(1000))
