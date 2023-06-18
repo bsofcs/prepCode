@@ -22,8 +22,9 @@ class Solution:
     def merge(self, intervals):
         if intervals is None:
             return None
-        #print(intervals)
+        print(intervals)
         intervals.sort(key=lambda a:(a[0],a[1]))
+        print("After Sort:",intervals)
         left=right=-1
         result=[]
         for i in intervals:
@@ -52,7 +53,7 @@ class Solution:
         return out
 
 s=Solution()
-intervals = [[1,3],[2,6],[8,10],[15,18]]
+intervals = [[1,3],[2,6],[15,18],[8,10]]
 print("RESULT for \n",intervals,":\n",s.merge(intervals))
 intervals = [[1,4],[4,5]]
 print("RESULT for \n",intervals,":\n",s.merge(intervals))
